@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const styles = {
     wrapper : {
         margin : 8,
@@ -30,15 +32,27 @@ const styles = {
 }
 
 function Post(props){
+
+    const [isFlag, setIsFlag] = useState(false);
+
+    const postHandler = (event, writer, subject) => {
+        setIsFlag((isFlag) => !isFlag);
+
+    };
     return(
-        <div style={styles.wrapper}>
+        <div style={styles.wrapper}
+            onClick={(event) => postHandler(event, props.writer, props.subject)}>
             <div>
                 <img    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
                         style={styles.img}/>
             </div>
             <div style={styles.content}>
-                <span style={styles.writerTxt}>{props.writer}</span>
-                <span style={styles.subjectTxt}>{props.subject}</span>
+                <span style={styles.writerTxt}>
+                    <p style={{color : (isFlag) ? "red" : "black"}}>{props.writer}</p>
+                    </span>
+                <span style={styles.subjectTxt}>
+                    <p style={{color : (isFlag) ? "red" : "black"}}>{props.subject}</p>
+                    </span>
                 
             </div>
         </div>

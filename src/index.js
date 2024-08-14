@@ -38,3 +38,34 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
     </React.StrictMode>
   );
 
+// import NotificationList from './sample_state/NotificationList';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <NotificationList/>
+//     </React.StrictMode>
+//   );
+
+//   import Counter from './sample_state/Counter';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <Counter/>
+//     </React.StrictMode>
+//   );
+
+// import Capacity from './sample_hook/Capacity';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <Capacity/>
+//     </React.StrictMode>
+// );
+
+// import ButtonEvent from './sample_event/ButtonEvent';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <ButtonEvent/>
+//     </React.StrictMode>
+// );
