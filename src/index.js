@@ -30,13 +30,13 @@ import reportWebVitals from './reportWebVitals';
 //   );
 // }, 1000);
 
-import PostList from './sample_elements/PostList';
-const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(
-    <React.StrictMode>
-      <PostList/>
-    </React.StrictMode>
-  );
+// import PostList from './sample_elements/PostList';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <PostList/>
+//     </React.StrictMode>
+//   );
 
 // import NotificationList from './sample_state/NotificationList';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -69,3 +69,27 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //       <ButtonEvent/>
 //     </React.StrictMode>
 // );
+
+// import Calculator from './sample_shared/Calculator';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <Calculator/>
+//     </React.StrictMode>
+// );
+
+// import ContextApp from './sample_context/ContextApp';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(
+//     <React.StrictMode>
+//       <ContextApp/>
+//     </React.StrictMode>
+// );
+
+import DarkOrLight from './sample_context/DarkOrLight';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <React.StrictMode>
+      <DarkOrLight/>
+    </React.StrictMode>
+);
